@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <div class="student">
+    <div class="std">
+    <label>Id : </label>
+    <input type="text" id="id" placeholder="Enter your student id">
+    </div>
+    <div class="std">
+    <label>Name : </label>
+    <input type="text" id="name"  placeholder="Enter your name">
+    </div>
+    <div class="std">
+    <label>Department : </label>
+    <input type="text" id="department" placeholder="Enter your department">
+    </div>
+    
+    <div class="btn">
+    <button type="add" id="add" onclick="addStudent()">Add</button>
+    
+   
+    <button type="get" id="get" onclick="getStudents()">Get</button>
+    
+    
+    <button type="put" id="put" onclick="updateStudent()">Put</button>
+    
+   
+    <button type="patch" id="patch" onclick="patchStudent()">Patch</button>
+    
+    
+    <button type="delete" id="dlt" onclick="deleteStudent()">Delete</button>
+    </div>
+
+    <div id="result"></div>
+    </div>
+    
+  <script src="script.js"></script>  
+</body>
+</html>
